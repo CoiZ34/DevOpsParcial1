@@ -1,0 +1,1 @@
+﻿$ curl -d "Hi" https://ntfy.sh/DevOps-itla

@@ -1,0 +1,4 @@
+C:\Users\hance\OneDrive\Escritorio\DevOps\obj\Debug\net10.0\DevOps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hance\OneDrive\Escritorio\DevOps\obj\Debug\net10.0\DevOps.AssemblyInfoInputs.cache
+C:\Users\hance\OneDrive\Escritorio\DevOps\obj\Debug\net10.0\DevOps.AssemblyInfo.cs
+C:\Users\hance\OneDrive\Escritorio\DevOps\obj\Debug\net10.0\DevOps.csproj.CoreCompileInputs.cache
