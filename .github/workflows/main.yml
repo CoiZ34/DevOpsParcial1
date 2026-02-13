@@ -23,5 +23,5 @@ jobs:
       - name: Deploy to Surge
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-        run: surge ./ tu-dominio-aqui.surge.sh
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN}}
+        run: surge ./ devops-itla-coiz34.surge.sh
