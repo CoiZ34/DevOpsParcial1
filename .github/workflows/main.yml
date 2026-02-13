@@ -23,13 +23,13 @@ jobs:
       - name: Deploy to Surge
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN}}
-        run: surge ./ devops-itla-coiz34.surge.sh
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ parcial1devops-coiz34.surge.sh
 
-        - name: Notify ntfy (deploy ok)
-  if: success()
-  run: |
-    curl -H "Title:  Deploy realizado con exito!" \
-         -H "Priority: high" \
-         -d "Repo: ${{ github.repository }} | Rama: ${{ github.ref_name }} | Commit: ${{ github.sha }} | Autor: ${{ github.actor }} | URL: https://parcial1devops-coiz34.surge.sh" \
-         https://ntfy.sh/Parcial1DevOps
+      - name: Notify ntfy (deploy ok)
+        if: success()
+        run: |
+          curl -H "Title: ✅ Deploy realizado con éxito!" \
+               -H "Priority: high" \
+               -d "Repo: ${{ github.repository }} | Rama: ${{ github.ref_name }} | Commit: ${{ github.sha }} | Autor: ${{ github.actor }} | URL: https://parcial1devops-coiz34.surge.sh" \
+               https://ntfy.sh/Parcial1DevOps
